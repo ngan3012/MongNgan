@@ -12,9 +12,9 @@ package QLSV;
 public class Main {
     public static void main(String[] args){
        LopHoc lophoc = new LopHoc();
-       HocSinh hs1 = new HocSinh("59-cntt-1","IT","Le Thi Mong Ngan",21,"Phu Yen","032756143") {};
+       HocSinh hs1 = new HocSinh("59-cntt-1","IT","Huynh Thi Thuy Hong",21,"Phu Yen","032756143") {};
        HocSinh hs2 = new HocSinh("59-cntt-1","IT","Bui Thi Thanh Nuong",21,"Quang Nam","0325637442") {};
-       HocSinh hs3 = new HocSinh("59-cntt-1","IT","Nguyen Thi Hong Quanh",21,"Khanh Hoa","0325730014") {};
+       HocSinh hs3 = new HocSinh("59-cntt-1","IT","Do Thi Thanh Thuy",21,"Phu Yen","0325730014") {};
        GiaoVien gv = new GiaoVien("Mau thiet Ke","IT","Huynh Tuan Anh",41,"Khanh Hoa","032947552") {
            @Override
            public void HienThiTT() {

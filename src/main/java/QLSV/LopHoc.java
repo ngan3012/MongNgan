@@ -11,14 +11,23 @@ import java.util.ArrayList;
  */
 
 public class LopHoc {
-    QLDS qldsGVGD = new QLDS();
-    QLDS qldsHS = new QLDS();
+    QLDS qldsGVGD;
+    QLDS qldsHS;
     ArrayList<HocSinh> hocsinh = new ArrayList<>();
     ArrayList<GiaoVien> giaovienGD = new ArrayList<>();
-    GiaoVien GiaoVienCN = new GiaoVien() {};
+    GiaoVien GiaoVienCN;
 
-    public LopHoc() {
+    public LopHoc(QLDS qldsGVGD, QLDS qldsHS, GiaoVien GiaoVienCN) {
+        this.qldsGVGD = qldsGVGD;
+        this.qldsHS = qldsHS;
+        this.GiaoVienCN = GiaoVienCN;
     }
+
+    LopHoc() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
     
     public int themHocSinh(HocSinh hs){
         qldsHS.them(hs);

@@ -33,7 +33,7 @@ public abstract class QLDS implements IQLDS{
     @Override
     public int xoa(String ten) {
         for (int i=0;i<dscanhan.size(); i++){
-            if (dscanhan.get(i).getHoTen() == ten)
+            if (dscanhan.get(i).getHoTen().equals(ten))
                 dscanhan.remove(i);
         }
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
